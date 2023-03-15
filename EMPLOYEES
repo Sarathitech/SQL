@@ -1,0 +1,13 @@
+create table employees(
+emp_id number(5) not null,
+first_name varchar2(10) not null,
+last_name varchar2(10) ,
+gender varchar2(1) not null,
+phone_no varchar(10),
+hire_date date not null,
+city varchar2(10),
+dept_id number(5) not null,
+job_id number(5) not null,
+designation varchar2(15),
+foreign key(dept_id)references dept(dept_id)
+);
