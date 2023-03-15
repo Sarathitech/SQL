@@ -1,0 +1,6 @@
+create table jobs(
+job_id number(5) not null primary key,
+job_title varchar2(15),
+start_date date not null,
+end_date date not null,
+);
